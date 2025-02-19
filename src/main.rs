@@ -2,7 +2,9 @@ use std::env;
 use std::io;
 use std::io::Write;
 
+mod ast;
 mod errors;
+mod expr;
 mod token_scanner;
 mod tokens;
 mod utils;

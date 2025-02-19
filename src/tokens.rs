@@ -3,6 +3,19 @@ pub enum Literal {
     Number { value: f64 },
 }
 
+impl Literal {
+    pub fn to_str(&self) -> String {
+        match self {
+            Literal::Number { value } => {
+                format!("{value}")
+            }
+            Literal::Str { value } => {
+                format!("{value}")
+            }
+        }
+    }
+}
+
 #[derive(Debug, PartialEq, Eq)]
 pub enum TokenType {
     // Single character token
