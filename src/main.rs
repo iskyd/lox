@@ -5,6 +5,7 @@ use std::io::Write;
 mod errors;
 mod token_scanner;
 mod tokens;
+mod utils;
 
 fn run_prompt() {
     loop {
